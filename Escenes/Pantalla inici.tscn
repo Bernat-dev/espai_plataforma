@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b064ahf5yqywi"]
+
+[ext_resource type="Texture2D" uid="uid://wuj773ohrkdn" path="res://Escenes/Captura de pantalla 2025-05-06 094430.png" id="1_klq1r"]
+
+[node name="PantallaInici" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(580, 316)
+scale = Vector2(1.93012, 2.12795)
+texture = ExtResource("1_klq1r")

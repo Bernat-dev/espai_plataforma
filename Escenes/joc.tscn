@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://c40pn2x7swg1i"]
+[gd_scene load_steps=6 format=3 uid="uid://c40pn2x7swg1i"]
 
 [ext_resource type="PackedScene" uid="uid://vb1h4rqbe4pq" path="res://Escenes/personatge.tscn" id="1_l3s5o"]
 [ext_resource type="Texture2D" uid="uid://tajcqoww8i88" path="res://Sprites/tilesets.png" id="2_bxi00"]
-[ext_resource type="Texture2D" uid="uid://dtdmun5ui0gka" path="res://Sprites/background.png" id="3_yip7x"]
-[ext_resource type="Texture2D" uid="uid://vydxavre0vao" path="res://Sprites/middleground.png" id="4_rm3ff"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_l3s5o"]
 
@@ -140,23 +138,6 @@ physics_layer_0/physics_material = SubResource("PhysicsMaterial_l3s5o")
 sources/0 = SubResource("TileSetAtlasSource_yip7x")
 
 [node name="Node2D" type="Node2D"]
-
-[node name="Fons" type="ParallaxBackground" parent="."]
-
-[node name="Fons_1" type="ParallaxLayer" parent="Fons"]
-motion_mirroring = Vector2(240, 176)
-
-[node name="Sprite2D" type="Sprite2D" parent="Fons/Fons_1"]
-position = Vector2(480, 368)
-texture = ExtResource("3_yip7x")
-
-[node name="Fons_2" type="ParallaxLayer" parent="Fons"]
-motion_scale = Vector2(0.5, 0.5)
-motion_mirroring = Vector2(272, 176)
-
-[node name="Sprite2D" type="Sprite2D" parent="Fons/Fons_2"]
-position = Vector2(480, 368)
-texture = ExtResource("4_rm3ff")
 
 [node name="Personatge" parent="." instance=ExtResource("1_l3s5o")]
 
