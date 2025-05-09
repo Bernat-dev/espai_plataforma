@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-var velocitat := 100
+var velocitat := 150
 var direccio := Vector2.ZERO
-var gravetat:= Vector2.DOWN * 150 
-var SALT:= -125
+var gravetat:= Vector2.DOWN * 500
+var SALT:= -300
 var salts_disponibles = 1
 var MAX_SALTS = 1
 

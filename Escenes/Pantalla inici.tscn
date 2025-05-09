@@ -1,7 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://b064ahf5yqywi"]
+[gd_scene load_steps=2 format=3 uid="uid://ce1qgqvuc4qjf"]
 
 [ext_resource type="Texture2D" uid="uid://wuj773ohrkdn" path="res://Sprites/Captura de pantalla 2025-05-06 094430.png" id="1_klq1r"]
-
 
 [node name="PantallaInici" type="Node2D"]
 

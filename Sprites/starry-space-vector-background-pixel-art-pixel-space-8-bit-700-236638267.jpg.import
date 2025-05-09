@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpwltimesjju0"
-path="res://.godot/imported/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267.jpg-dfcaca918a0c7e8b94397a150f1bbe7c.ctex"
+path="res://.godot/imported/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267.jpg-7c8190071104922b6c1364ee17683983.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267.jpg"
-dest_files=["res://.godot/imported/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267.jpg-dfcaca918a0c7e8b94397a150f1bbe7c.ctex"]
+source_file="res://Sprites/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267.jpg"
+dest_files=["res://.godot/imported/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267.jpg-7c8190071104922b6c1364ee17683983.ctex"]
 
 [params]
 
