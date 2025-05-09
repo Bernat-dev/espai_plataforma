@@ -1,3 +1,97 @@
-[gd_scene format=3 uid="uid://cuyo2qmi5t1ju"]
+[gd_scene load_steps=12 format=3 uid="uid://cuyo2qmi5t1ju"]
+
+[ext_resource type="Texture2D" uid="uid://dqwu0en0p5cga" path="res://Sprites/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267 (1).jpg" id="1_r1gg3"]
+[ext_resource type="Texture2D" uid="uid://cbvg38wrc7fc7" path="res://Sprites/Baren.png" id="2_4ppcb"]
+[ext_resource type="Script" uid="uid://bn5y7otpca31n" path="res://Scripts/button.gd" id="3_4ppcb"]
+[ext_resource type="Texture2D" uid="uid://5w0qhe2dmv2k" path="res://Sprites/Black_hole.png" id="3_merya"]
+[ext_resource type="Texture2D" uid="uid://ilw0dypkjww7" path="res://Sprites/Ice.png" id="4_t2xds"]
+[ext_resource type="Texture2D" uid="uid://bgy128ynbodik" path="res://Sprites/Lava.png" id="5_c4514"]
+[ext_resource type="Script" uid="uid://dgoyldeunqx0r" path="res://Scripts/button_1.gd" id="5_mdgp2"]
+[ext_resource type="Texture2D" uid="uid://b4gjx4wu6titx" path="res://Sprites/Terran.png" id="6_mdgp2"]
+[ext_resource type="Script" uid="uid://6unp6d1p8g07" path="res://Scripts/button_2.gd" id="7_8twa4"]
+[ext_resource type="Script" uid="uid://bu8uv3sog1p8" path="res://Scripts/button_3.gd" id="9_hsxv7"]
+[ext_resource type="Script" uid="uid://blgnx12n822vu" path="res://Scripts/button_4.gd" id="11_yxjgh"]
 
 [node name="Pantalla escollir món" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(644.662, 353.421)
+scale = Vector2(1.90668, 1.63845)
+texture = ExtResource("1_r1gg3")
+
+[node name="Baren" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(272, 192)
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("2_4ppcb")
+
+[node name="Button" type="Button" parent="Baren"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+script = ExtResource("3_4ppcb")
+
+[node name="BlackHole" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(224, 432)
+scale = Vector2(5.89323, 5.12035)
+texture = ExtResource("3_merya")
+
+[node name="Button1" type="Button" parent="BlackHole"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -19.0
+offset_top = -19.0
+offset_right = 19.0
+offset_bottom = 22.0
+script = ExtResource("5_mdgp2")
+
+[node name="Ice" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(944, 160)
+scale = Vector2(4.45833, 4.12809)
+texture = ExtResource("4_t2xds")
+
+[node name="Button2" type="Button" parent="Ice"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -22.0
+offset_top = -23.0
+offset_right = 22.0
+offset_bottom = 23.0
+script = ExtResource("7_8twa4")
+
+[node name="Lava" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(848, 480)
+scale = Vector2(3.46875, 3.194)
+texture = ExtResource("5_c4514")
+
+[node name="Button3" type="Button" parent="Lava"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -23.0
+offset_top = -25.0
+offset_right = 23.0
+offset_bottom = 25.0
+script = ExtResource("9_hsxv7")
+
+[node name="Terran" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 272)
+scale = Vector2(6.875, 6.875)
+texture = ExtResource("6_mdgp2")
+
+[node name="Button4" type="Button" parent="Terran"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -23.0
+offset_top = -23.0
+offset_right = 23.0
+offset_bottom = 23.0
+script = ExtResource("11_yxjgh")
+
+[connection signal="pressed" from="Baren/Button" to="Baren/Button" method="_on_pressed"]
