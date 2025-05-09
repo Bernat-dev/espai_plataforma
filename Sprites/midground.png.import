@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsb335aww67se"
-path="res://.godot/imported/pixilart-drawing.png-cf424b50069cb834c727cda4f107bfc0.ctex"
+uid="uid://veh1ryevhpq4"
+path="res://.godot/imported/midground.png-ba57c08a9ffff3907e3b30f8320323d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Escenes/pixilart-drawing.png"
-dest_files=["res://.godot/imported/pixilart-drawing.png-cf424b50069cb834c727cda4f107bfc0.ctex"]
+source_file="res://Sprites/midground.png"
+dest_files=["res://.godot/imported/midground.png-ba57c08a9ffff3907e3b30f8320323d4.ctex"]
 
 [params]
 
