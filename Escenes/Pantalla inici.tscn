@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://ce1qgqvuc4qjf"]
+[gd_scene load_steps=3 format=3 uid="uid://ce1qgqvuc4qjf"]
 
-[ext_resource type="Texture2D" uid="uid://wuj773ohrkdn" path="res://Sprites/Captura de pantalla 2025-05-06 094430.png" id="1_klq1r"]
+[ext_resource type="Texture2D" uid="uid://db6ik014gbgps" path="res://imatges/baixa.jpg" id="1_klq1r"]
+[ext_resource type="Texture2D" uid="uid://cfn5ivwncqqwp" path="res://Sprites/image-removebg-preview.png" id="2_3aats"]
 
 [node name="PantallaInici" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(580, 316)
-scale = Vector2(1.93012, 2.12795)
+position = Vector2(579.257, 312)
+scale = Vector2(3.92495, 3.90476)
 texture = ExtResource("1_klq1r")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-0.82977, 6.14633)
+scale = Vector2(0.260967, 0.260967)
+texture = ExtResource("2_3aats")

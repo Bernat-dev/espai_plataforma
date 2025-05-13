@@ -12,6 +12,33 @@
 [ext_resource type="Script" uid="uid://bu8uv3sog1p8" path="res://Scripts/boto_lava.gd" id="9_hsxv7"]
 [ext_resource type="Script" uid="uid://blgnx12n822vu" path="res://Scripts/boto_aigua.gd" id="11_yxjgh"]
 
+[sub_resource type="Animation" id="Animation_8twa4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Baren:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Baren:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 3.975)]
+}
+
 [sub_resource type="Animation" id="Animation_mdgp2"]
 resource_name = "seleccio_p_roca"
 length = 2.0
@@ -41,12 +68,18 @@ tracks/1/keys = {
 "values": [Vector2(4, 3.975), Vector2(6, 5.963), Vector2(4, 3.975), Vector2(6, 5.963), Vector2(4, 3.975)]
 }
 
-[sub_resource type="Animation" id="Animation_8twa4"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hsxv7"]
+_data = {
+&"RESET": SubResource("Animation_8twa4"),
+&"seleccio_p_roca": SubResource("Animation_mdgp2")
+}
+
+[sub_resource type="Animation" id="Animation_5a63q"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Baren:rotation")
+tracks/0/path = NodePath("BlackHole:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -58,20 +91,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Baren:scale")
+tracks/1/path = NodePath("BlackHole:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(4, 3.975)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hsxv7"]
-_data = {
-&"RESET": SubResource("Animation_8twa4"),
-&"seleccio_p_roca": SubResource("Animation_mdgp2")
+"values": [Vector2(4, 3.731)]
 }
 
 [sub_resource type="Animation" id="Animation_hsxv7"]
@@ -103,12 +130,18 @@ tracks/1/keys = {
 "values": [0.0, -1.0472, 0.0, 1.0472, 0.0]
 }
 
-[sub_resource type="Animation" id="Animation_5a63q"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o71x1"]
+_data = {
+&"RESET": SubResource("Animation_5a63q"),
+&"seleccio_p_foratnegre": SubResource("Animation_hsxv7")
+}
+
+[sub_resource type="Animation" id="Animation_nqxx7"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BlackHole:rotation")
+tracks/0/path = NodePath("Ice:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -120,20 +153,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BlackHole:scale")
+tracks/1/path = NodePath("Ice:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(4, 3.731)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_o71x1"]
-_data = {
-&"RESET": SubResource("Animation_5a63q"),
-&"seleccio_p_foratnegre": SubResource("Animation_hsxv7")
+"values": [Vector2(4, 3.809)]
 }
 
 [sub_resource type="Animation" id="Animation_yxjgh"]
@@ -165,12 +192,18 @@ tracks/1/keys = {
 "values": [Vector2(4, 3.809), Vector2(6, 5.714), Vector2(4, 3.809), Vector2(6, 5.714), Vector2(4, 3.809)]
 }
 
-[sub_resource type="Animation" id="Animation_nqxx7"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nqxx7"]
+_data = {
+&"RESET": SubResource("Animation_nqxx7"),
+&"seleccio_p_gel": SubResource("Animation_yxjgh")
+}
+
+[sub_resource type="Animation" id="Animation_kgq3a"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Ice:rotation")
+tracks/0/path = NodePath("Lava:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -182,20 +215,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Ice:scale")
+tracks/1/path = NodePath("Lava:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(4, 3.809)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_nqxx7"]
-_data = {
-&"RESET": SubResource("Animation_nqxx7"),
-&"seleccio_p_gel": SubResource("Animation_yxjgh")
+"values": [Vector2(4, 3.951)]
 }
 
 [sub_resource type="Animation" id="Animation_h22am"]
@@ -227,37 +254,37 @@ tracks/1/keys = {
 "values": [Vector2(4, 3.951), Vector2(6, 5.927), Vector2(4, 3.951), Vector2(6, 5.927), Vector2(4, 3.951)]
 }
 
-[sub_resource type="Animation" id="Animation_kgq3a"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a6fk3"]
+_data = {
+&"RESET": SubResource("Animation_kgq3a"),
+&"seleccio_p_lava": SubResource("Animation_h22am")
+}
+
+[sub_resource type="Animation" id="Animation_fajyr"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Lava:rotation")
+tracks/0/path = NodePath("Terran:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [Vector2(5, 4.928)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Lava:scale")
+tracks/1/path = NodePath("Terran:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(4, 3.951)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_a6fk3"]
-_data = {
-&"RESET": SubResource("Animation_kgq3a"),
-&"seleccio_p_lava": SubResource("Animation_h22am")
+"values": [0.0]
 }
 
 [sub_resource type="Animation" id="Animation_a6fk3"]
@@ -287,33 +314,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(5, 4.928), Vector2(7, 6.899), Vector2(5, 4.928), Vector2(7, 6.899), Vector2(5, 4.928)]
-}
-
-[sub_resource type="Animation" id="Animation_fajyr"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Terran:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(5, 4.928)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Terran:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5a63q"]
