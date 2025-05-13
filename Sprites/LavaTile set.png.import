@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1fefhh7xbfsl"
-path="res://.godot/imported/64d40f99cdb54.webp-cc2b7e0826981edb8de87743315252c5.ctex"
+uid="uid://b4xdchvd3mp6f"
+path="res://.godot/imported/LavaTile set.png-d101176db51ebb9afb8042ce530ac6a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Escenes/64d40f99cdb54.webp"
-dest_files=["res://.godot/imported/64d40f99cdb54.webp-cc2b7e0826981edb8de87743315252c5.ctex"]
+source_file="res://Sprites/LavaTile set.png"
+dest_files=["res://.godot/imported/LavaTile set.png-d101176db51ebb9afb8042ce530ac6a0.ctex"]
 
 [params]
 
