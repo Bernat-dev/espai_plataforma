@@ -178,6 +178,7 @@ libraries = {
 
 [connection signal="mouse_entered" from="Lava" to="Lava" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Lava" to="Lava" method="_on_mouse_exited"]
+[connection signal="pressed" from="Lava" to="Lava" method="_on_pressed"]
 [connection signal="mouse_entered" from="Aigua" to="Aigua" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Aigua" to="Aigua" method="_on_mouse_exited"]
 [connection signal="pressed" from="Aigua" to="Aigua" method="_on_pressed"]
