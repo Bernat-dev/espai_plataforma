@@ -1,202 +1,10 @@
-[gd_scene load_steps=27 format=3 uid="uid://cuyo2qmi5t1ju"]
+[gd_scene load_steps=12 format=3 uid="uid://cuyo2qmi5t1ju"]
 
 [ext_resource type="Texture2D" uid="uid://dqwu0en0p5cga" path="res://Sprites/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267 (1).jpg" id="1_ilquv"]
-[ext_resource type="Script" uid="uid://bn5y7otpca31n" path="res://Scripts/boto_roca.gd" id="2_mtjju"]
-[ext_resource type="Texture2D" uid="uid://cbvg38wrc7fc7" path="res://Sprites/Baren.png" id="3_s6qt8"]
-[ext_resource type="Script" uid="uid://dgoyldeunqx0r" path="res://Scripts/boto_forat_negre.gd" id="4_g6ox1"]
-[ext_resource type="Texture2D" uid="uid://5w0qhe2dmv2k" path="res://Sprites/Black_hole.png" id="5_ls584"]
-[ext_resource type="Script" uid="uid://6unp6d1p8g07" path="res://Scripts/boto_gel.gd" id="6_agelg"]
-[ext_resource type="Texture2D" uid="uid://ilw0dypkjww7" path="res://Sprites/Ice.png" id="7_ocqri"]
 [ext_resource type="Script" uid="uid://bu8uv3sog1p8" path="res://Scripts/boto_lava.gd" id="8_qoobd"]
 [ext_resource type="Texture2D" uid="uid://bgy128ynbodik" path="res://Sprites/Lava.png" id="9_3cttk"]
 [ext_resource type="Texture2D" uid="uid://b4gjx4wu6titx" path="res://Sprites/Terran.png" id="10_0h36b"]
 [ext_resource type="Script" uid="uid://blgnx12n822vu" path="res://Scripts/boto_aigua.gd" id="11_vibo1"]
-
-[sub_resource type="Animation" id="Animation_8twa4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Baren:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Baren:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(4, 3.975)]
-}
-
-[sub_resource type="Animation" id="Animation_mdgp2"]
-resource_name = "seleccio_p_roca"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Baren:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -1.0472, 0.0, 1.0472, 0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Baren:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(4, 3.975), Vector2(6, 5.963), Vector2(4, 3.975), Vector2(6, 5.963), Vector2(4, 3.975)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hsxv7"]
-_data = {
-&"RESET": SubResource("Animation_8twa4"),
-&"seleccio_p_roca": SubResource("Animation_mdgp2")
-}
-
-[sub_resource type="Animation" id="Animation_5a63q"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BlackHole:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BlackHole:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(4, 3.731)]
-}
-
-[sub_resource type="Animation" id="Animation_hsxv7"]
-resource_name = "seleccio_p_foratnegre"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BlackHole:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(4, 3.731), Vector2(6, 5.597), Vector2(4, 3.731), Vector2(6, 5.597), Vector2(4, 3.731)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BlackHole:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -1.0472, 0.0, 1.0472, 0.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_o71x1"]
-_data = {
-&"RESET": SubResource("Animation_5a63q"),
-&"seleccio_p_foratnegre": SubResource("Animation_hsxv7")
-}
-
-[sub_resource type="Animation" id="Animation_nqxx7"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Ice:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Ice:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(4, 3.809)]
-}
-
-[sub_resource type="Animation" id="Animation_yxjgh"]
-resource_name = "seleccio_p_gel"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Ice:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [0.0, -1.0472, 0.0, 1.0472, 0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Ice:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(4, 3.809), Vector2(6, 5.714), Vector2(4, 3.809), Vector2(6, 5.714), Vector2(4, 3.809)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_nqxx7"]
-_data = {
-&"RESET": SubResource("Animation_nqxx7"),
-&"seleccio_p_gel": SubResource("Animation_yxjgh")
-}
 
 [sub_resource type="Animation" id="Animation_kgq3a"]
 length = 0.001
@@ -251,7 +59,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(4, 3.951), Vector2(6, 5.927), Vector2(4, 3.951), Vector2(6, 5.927), Vector2(4, 3.951)]
+"values": [Vector2(5, 4.939), Vector2(7, 6.915), Vector2(5, 4.939), Vector2(7, 6.915), Vector2(5, 4.939)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a6fk3"]
@@ -329,69 +137,12 @@ position = Vector2(633, 365)
 scale = Vector2(1.90668, 1.63845)
 texture = ExtResource("1_ilquv")
 
-[node name="Roca" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 108.0
-offset_top = 68.0
-offset_right = 343.0
-offset_bottom = 289.0
-script = ExtResource("2_mtjju")
-
-[node name="Baren" type="Sprite2D" parent="Roca"]
-texture_filter = 1
-position = Vector2(117, 109)
-scale = Vector2(4, 3.975)
-texture = ExtResource("3_s6qt8")
-
-[node name="animacio_roca" type="AnimationPlayer" parent="Roca"]
-libraries = {
-&"": SubResource("AnimationLibrary_hsxv7")
-}
-
-[node name="Forat_negre" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 108.0
-offset_top = 371.0
-offset_right = 348.0
-offset_bottom = 591.0
-script = ExtResource("4_g6ox1")
-
-[node name="BlackHole" type="Sprite2D" parent="Forat_negre"]
-texture_filter = 1
-position = Vector2(126, 106)
-scale = Vector2(4, 3.731)
-texture = ExtResource("5_ls584")
-
-[node name="animacio_foratnegre" type="AnimationPlayer" parent="Forat_negre"]
-libraries = {
-&"": SubResource("AnimationLibrary_o71x1")
-}
-
-[node name="Gel" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 848.0
-offset_top = 65.0
-offset_right = 1054.0
-offset_bottom = 259.0
-script = ExtResource("6_agelg")
-
-[node name="Ice" type="Sprite2D" parent="Gel"]
-texture_filter = 1
-position = Vector2(98, 94)
-scale = Vector2(4, 3.809)
-texture = ExtResource("7_ocqri")
-
-[node name="animacio_gel" type="AnimationPlayer" parent="Gel"]
-libraries = {
-&"": SubResource("AnimationLibrary_nqxx7")
-}
-
 [node name="Lava" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 815.0
-offset_top = 356.0
-offset_right = 1031.0
-offset_bottom = 572.0
+offset_left = 682.0
+offset_top = 215.0
+offset_right = 898.0
+offset_bottom = 431.0
 script = ExtResource("8_qoobd")
 
 [node name="Lava" type="Sprite2D" parent="Lava"]
@@ -407,10 +158,10 @@ libraries = {
 
 [node name="Aigua" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 419.0
-offset_top = 114.0
-offset_right = 703.0
-offset_bottom = 433.0
+offset_left = 213.0
+offset_top = 136.0
+offset_right = 497.0
+offset_bottom = 455.0
 icon = ExtResource("10_0h36b")
 script = ExtResource("11_vibo1")
 
@@ -425,13 +176,6 @@ libraries = {
 &"": SubResource("AnimationLibrary_5a63q")
 }
 
-[connection signal="mouse_entered" from="Roca" to="Roca" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Roca" to="Roca" method="_on_mouse_exited"]
-[connection signal="pressed" from="Roca" to="Roca" method="_on_pressed"]
-[connection signal="mouse_entered" from="Forat_negre" to="Forat_negre" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Forat_negre" to="Forat_negre" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="Gel" to="Gel" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Gel" to="Gel" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="Lava" to="Lava" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Lava" to="Lava" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="Aigua" to="Aigua" method="_on_mouse_entered"]
