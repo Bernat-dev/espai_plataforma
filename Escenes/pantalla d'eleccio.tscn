@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dqwu0en0p5cga" path="res://Sprites/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267 (1).jpg" id="1_ilquv"]
 [ext_resource type="Texture2D" uid="uid://cbycyj58sndqp" path="res://Sprites/boto_leave.png" id="6_70l6s"]
-[ext_resource type="Script" uid="uid://74aa4n0s4psa" path="res://Escenes/button.gd" id="6_qappi"]
+[ext_resource type="Script" path="res://Escenes/button.gd" id="6_qappi"]
 [ext_resource type="Script" uid="uid://bu8uv3sog1p8" path="res://Scripts/boto_lava.gd" id="8_qoobd"]
 [ext_resource type="Texture2D" uid="uid://bgy128ynbodik" path="res://Sprites/Lava.png" id="9_3cttk"]
 [ext_resource type="Texture2D" uid="uid://b4gjx4wu6titx" path="res://Sprites/Terran.png" id="10_0h36b"]
