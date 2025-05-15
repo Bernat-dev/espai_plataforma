@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsb335aww67se"
-path="res://.godot/imported/pixilart-drawing.png-1bde2f1722dade17f84990ac2269443e.ctex"
+uid="uid://bfqf8py233on"
+path="res://.godot/imported/Cyborg_attack3.png-8feb2709b0c0637b6460a68e72e59237.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/pixilart-drawing.png"
-dest_files=["res://.godot/imported/pixilart-drawing.png-1bde2f1722dade17f84990ac2269443e.ctex"]
+source_file="res://Sprites/Cyborg_attack3.png"
+dest_files=["res://.godot/imported/Cyborg_attack3.png-8feb2709b0c0637b6460a68e72e59237.ctex"]
 
 [params]
 

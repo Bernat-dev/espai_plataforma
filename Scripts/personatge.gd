@@ -24,6 +24,8 @@ func _process(delta:float) -> void:
 		$Sprite.play("Run")
 	if mov == 0 and is_on_floor():
 		$Sprite.play("Quiet")
+		if Input.is_action_pressed("pegar"):
+			$Sprite.play("Pegar")
 	
 	velocity += gravetat * delta
 	move_and_slide()
@@ -31,4 +33,5 @@ func _process(delta:float) -> void:
 		salts_disponibles = MAX_SALTS
 	if not is_on_floor():
 		$Sprite.play("Salt")
+	
 		

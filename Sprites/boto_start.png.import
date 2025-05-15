@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db6ik014gbgps"
-path="res://.godot/imported/baixa.jpg-a42ffa4174d3d4ba10539bef6c89281f.ctex"
+uid="uid://x6ejfgumh4py"
+path="res://.godot/imported/boto_start.png-b2258c019c40ede42a6db9d4af187d7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imatges/baixa.jpg"
-dest_files=["res://.godot/imported/baixa.jpg-a42ffa4174d3d4ba10539bef6c89281f.ctex"]
+source_file="res://Sprites/boto_start.png"
+dest_files=["res://.godot/imported/boto_start.png-b2258c019c40ede42a6db9d4af187d7a.ctex"]
 
 [params]
 

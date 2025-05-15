@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://ce1qgqvuc4qjf"]
+
+[ext_resource type="Texture2D" uid="uid://bqlse2xj4oo2o" path="res://Sprites/fons_menu.jpg" id="1_ndcg1"]
+[ext_resource type="Texture2D" uid="uid://x6ejfgumh4py" path="res://Sprites/boto_start.png" id="2_7c6bd"]
+[ext_resource type="Script" uid="uid://dik8vjrjco5cl" path="res://Scripts/boto_start.gd" id="2_s3shl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1l1r7"]
+atlas = ExtResource("2_7c6bd")
+region = Rect2(148, 0, 74, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgnra"]
+atlas = ExtResource("2_7c6bd")
+region = Rect2(0, 0, 74, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owlq7"]
+atlas = ExtResource("2_7c6bd")
+region = Rect2(74, 0, 74, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1l1r7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1l1r7")
+}],
+"loop": true,
+"name": &"Clic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgnra")
+}],
+"loop": true,
+"name": &"Damunt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owlq7")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}]
+
+[node name="PantallaInici" type="Node2D"]
+
+[node name="FonsMenu" type="Sprite2D" parent="."]
+self_modulate = Color(0.314316, 0.314316, 0.314316, 1)
+texture_filter = 1
+position = Vector2(540, 293)
+scale = Vector2(2, 2)
+texture = ExtResource("1_ndcg1")
+
+[node name="boto_jugar" type="Button" parent="."]
+offset_left = 376.0
+offset_top = 250.0
+offset_right = 725.0
+offset_bottom = 386.0
+script = ExtResource("2_s3shl")
+
+[node name="sprite_boto" type="AnimatedSprite2D" parent="boto_jugar"]
+texture_filter = 1
+position = Vector2(184, 58)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_1l1r7")
+animation = &"Damunt"
+autoplay = "Normal"
+
+[connection signal="mouse_entered" from="boto_jugar" to="boto_jugar" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="boto_jugar" to="boto_jugar" method="_on_mouse_exited"]
+[connection signal="pressed" from="boto_jugar" to="boto_jugar" method="_on_pressed"]
