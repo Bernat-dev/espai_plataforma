@@ -1,6 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://cuyo2qmi5t1ju"]
+[gd_scene load_steps=17 format=3 uid="uid://cuyo2qmi5t1ju"]
 
 [ext_resource type="Texture2D" uid="uid://dqwu0en0p5cga" path="res://Sprites/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267 (1).jpg" id="1_ilquv"]
+[ext_resource type="Texture2D" uid="uid://cbycyj58sndqp" path="res://Sprites/boto_leave.png" id="6_70l6s"]
+[ext_resource type="Script" uid="uid://74aa4n0s4psa" path="res://Escenes/button.gd" id="6_qappi"]
 [ext_resource type="Script" uid="uid://bu8uv3sog1p8" path="res://Scripts/boto_lava.gd" id="8_qoobd"]
 [ext_resource type="Texture2D" uid="uid://bgy128ynbodik" path="res://Sprites/Lava.png" id="9_3cttk"]
 [ext_resource type="Texture2D" uid="uid://b4gjx4wu6titx" path="res://Sprites/Terran.png" id="10_0h36b"]
@@ -130,6 +132,33 @@ _data = {
 &"seleccio_p_aigua": SubResource("Animation_a6fk3")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_a82a8"]
+atlas = ExtResource("6_70l6s")
+region = Rect2(0, 0, 75, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p47a3"]
+atlas = ExtResource("6_70l6s")
+region = Rect2(74, 0, 70, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2t015"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a82a8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p47a3")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
 [node name="Pantalla escollir món" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -147,7 +176,7 @@ script = ExtResource("8_qoobd")
 
 [node name="Lava" type="Sprite2D" parent="Lava"]
 texture_filter = 1
-position = Vector2(111, 102)
+position = Vector2(100, 97)
 scale = Vector2(4, 3.951)
 texture = ExtResource("9_3cttk")
 
@@ -176,9 +205,25 @@ libraries = {
 &"": SubResource("AnimationLibrary_5a63q")
 }
 
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 194.0
+offset_bottom = 94.0
+script = ExtResource("6_qappi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Button"]
+position = Vector2(90, 46)
+scale = Vector2(2.34848, 2.34848)
+sprite_frames = SubResource("SpriteFrames_2t015")
+animation = &"new_animation"
+autoplay = "new_animation"
+
 [connection signal="mouse_entered" from="Lava" to="Lava" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Lava" to="Lava" method="_on_mouse_exited"]
 [connection signal="pressed" from="Lava" to="Lava" method="_on_pressed"]
 [connection signal="mouse_entered" from="Aigua" to="Aigua" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Aigua" to="Aigua" method="_on_mouse_exited"]
 [connection signal="pressed" from="Aigua" to="Aigua" method="_on_pressed"]
+[connection signal="mouse_entered" from="Button" to="Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
