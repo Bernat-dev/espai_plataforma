@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dumcaorutqv5n"]
+[gd_scene load_steps=13 format=3 uid="uid://dumcaorutqv5n"]
 
 [ext_resource type="Script" uid="uid://b3a724mshqdxk" path="res://Scripts/cohet.gd" id="1_hax56"]
 [ext_resource type="Texture2D" uid="uid://t72q2twvbx4l" path="res://Sprites/Nairan - Battlecruiser - Base.png" id="2_1dk4u"]
@@ -12,6 +12,10 @@ _limits = [0.0, 133.99, 0.0, 1.0]
 _data = [Vector2(1, 1), 0.0, 0.0, 0, 0]
 point_count = 1
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hax56"]
+atlas = ExtResource("2_1dk4u")
+region = Rect2(64, 0, 64, 128)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_m17kd"]
 atlas = ExtResource("2_1dk4u")
 region = Rect2(0, 0, 64, 128)
@@ -20,40 +24,20 @@ region = Rect2(0, 0, 64, 128)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_hax56")
+}],
+"loop": true,
+"name": &"altre",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_m17kd")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
-
-[sub_resource type="Animation" id="Animation_am44n"]
-resource_name = "quiet"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.05, 0.45, 0.55, 0.95),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(-20, 0), Vector2(-20, -25), Vector2(-20, -25), Vector2(-20, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.0333333),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
 
 [sub_resource type="Animation" id="Animation_l8d8a"]
 length = 0.001
@@ -137,6 +121,34 @@ tracks/2/keys = {
 }
 tracks/2/use_blend = true
 
+[sub_resource type="Animation" id="Animation_am44n"]
+resource_name = "quiet"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.05, 0.45, 0.55, 0.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-20, 0), Vector2(-20, -25), Vector2(-20, -25), Vector2(-20, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qtgbg"]
 _data = {
 &"RESET": SubResource("Animation_l8d8a"),
@@ -168,11 +180,9 @@ color = Color(1, 1, 0, 1)
 
 [node name="Cohet3" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-20, 0)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-1870, -2272)
 sprite_frames = SubResource("SpriteFrames_kfukl")
 autoplay = "default"
-frame_progress = 0.751879
 
 [node name="Cohet2" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Cohet3")

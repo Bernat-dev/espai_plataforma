@@ -10,6 +10,7 @@ var vides = 3
 var spawnpoint = Vector2(0,0)
 var immunitat = true
 @onready var timer_immunitat: Timer = $Timer_immunitat
+var parts_cohets = 0
 
 
 func _process(delta:float) -> void:
@@ -55,6 +56,9 @@ func _process(delta:float) -> void:
 	
 	if vides == 0:
 		get_tree().change_scene_to_file("res://Escenes/pantalla d'eleccio.tscn")
+	if parts_cohets == 2:
+		get_tree().change_scene_to_file("res://Escenes/credits.tscn")
+
 
 func mal():
 	if immunitat == false:
@@ -62,7 +66,8 @@ func mal():
 		timer_immunitat.start()
 	else:
 		pass
-	
+
+
 
 
 func _on_timer_immunitat_timeout() -> void:

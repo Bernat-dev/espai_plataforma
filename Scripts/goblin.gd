@@ -11,7 +11,7 @@ func _process(delta: float) -> void:
 
 	if ray_cast_dreta.is_colliding():
 		direccio = -1
-		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.flip_h = false
 	if ray_cast_esquerra.is_colliding():
 		direccio = 1
-		$AnimatedSprite2D.flip_h = false
+		$AnimatedSprite2D.flip_h = true

@@ -5,7 +5,9 @@ extends Area2D
 
 func _on_body_entered(body: CharacterBody2D) -> void:
 	$Cohet2.play("new_animation")
+	body.parts_cohets += 1
 	timer.start(3)
+
 	
 
 

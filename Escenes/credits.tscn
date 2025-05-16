@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cofto7gvi3q3d"]
+
+[ext_resource type="Texture2D" uid="uid://dqwu0en0p5cga" path="res://Sprites/starry-space-vector-background-pixel-art-pixel-space-8-bit-700-236638267 (1).jpg" id="1_xvb0k"]
+[ext_resource type="FontFile" uid="uid://5wqhxey4g5yc" path="res://Sprites/Golden Age Shad.ttf" id="2_13ulg"]
+
+[node name="Credits" type="Node2D"]
+
+[node name="Fons" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(580, 398)
+scale = Vector2(2, 2)
+texture = ExtResource("1_xvb0k")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 117.0
+offset_top = 5.0
+offset_right = 1068.0
+offset_bottom = 632.0
+theme_override_colors/font_color = Color(0.671515, 0.628912, 3.85046e-07, 1)
+theme_override_fonts/font = ExtResource("2_13ulg")
+theme_override_font_sizes/font_size = 66
+text = "               Ben fet!
+
+Moltes gracies per 
+jugar al nostre joc
+
+               fet per
+
+               bernat
+
+                 marc
+
+                  eric
+
+                   pol"
