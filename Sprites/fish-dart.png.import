@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkxvb3vutavyy"
-path="res://.godot/imported/fons_lava.png-93127dfbf976663249efbb9ae06472f7.ctex"
+uid="uid://b3kyw2ghjf026"
+path="res://.godot/imported/fish-dart.png-956cfc7ea2649b68a1308c65f122754b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/fons_lava.png"
-dest_files=["res://.godot/imported/fons_lava.png-93127dfbf976663249efbb9ae06472f7.ctex"]
+source_file="res://Sprites/fish-dart.png"
+dest_files=["res://.godot/imported/fish-dart.png-956cfc7ea2649b68a1308c65f122754b.ctex"]
 
 [params]
 

@@ -6,6 +6,10 @@ var gravetat:= Vector2.DOWN * 500
 var SALT:= -300
 var salts_disponibles = 1
 var MAX_SALTS = 1
+var vides = 3
+var spawnpoint = Vector2(0,0)
+var immunitat = true
+@onready var timer_immunitat: Timer = $Timer_immunitat
 
 
 func _process(delta:float) -> void:
@@ -33,5 +37,33 @@ func _process(delta:float) -> void:
 		salts_disponibles = MAX_SALTS
 	if not is_on_floor():
 		$Sprite.play("Salt")
-	
 		
+	if vides == 3:
+		$Vida_1.play("Ple")
+		$Vida_2.play("Ple")
+		$Vida_3.play("Ple")
+		
+	if vides == 2:
+		$Vida_1.play("Ple")
+		$Vida_2.play("Ple")
+		$Vida_3.play("Buit")
+		
+	if vides == 1:
+		$Vida_1.play("Ple")
+		$Vida_2.play("Buit")
+		$Vida_3.play("Buit")
+	
+	if vides == 0:
+		get_tree().change_scene_to_file("res://Escenes/pantalla d'eleccio.tscn")
+
+func mal():
+	if immunitat == false:
+		vides -=1
+		timer_immunitat.start()
+	else:
+		pass
+	
+
+
+func _on_timer_immunitat_timeout() -> void:
+	immunitat = false

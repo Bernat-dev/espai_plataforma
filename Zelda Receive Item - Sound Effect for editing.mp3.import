@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dt8b48u4mcmxh"
+path="res://.godot/imported/Zelda Receive Item - Sound Effect for editing.mp3-18d51c0c5d5866b0bebbadcb8feadb97.mp3str"
+
+[deps]
+
+source_file="res://Zelda Receive Item - Sound Effect for editing.mp3"
+dest_files=["res://.godot/imported/Zelda Receive Item - Sound Effect for editing.mp3-18d51c0c5d5866b0bebbadcb8feadb97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqan5dvrtyp1"
-path="res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"
+uid="uid://s6h3lklbrp00"
+path="res://.godot/imported/fish-big.png-9deed7cf81f5cf8b2eee2d0bedaaff29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/lava-tile.png"
-dest_files=["res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"]
+source_file="res://Sprites/fish-big.png"
+dest_files=["res://.godot/imported/fish-big.png-9deed7cf81f5cf8b2eee2d0bedaaff29.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqan5dvrtyp1"
-path="res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"
+uid="uid://cnjip3sjr83pu"
+path="res://.godot/imported/flag animation.png-4714661f816d3ffa8989ac32849c71fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/lava-tile.png"
-dest_files=["res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"]
+source_file="res://Sprites/flag animation.png"
+dest_files=["res://.godot/imported/flag animation.png-4714661f816d3ffa8989ac32849c71fb.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqan5dvrtyp1"
-path="res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"
+uid="uid://t72q2twvbx4l"
+path="res://.godot/imported/Nairan - Battlecruiser - Base.png-0f7115f24b4cdfa83149561cd5fccf6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/lava-tile.png"
-dest_files=["res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"]
+source_file="res://Sprites/Nairan - Battlecruiser - Base.png"
+dest_files=["res://.godot/imported/Nairan - Battlecruiser - Base.png-0f7115f24b4cdfa83149561cd5fccf6c.ctex"]
 
 [params]
 

@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=3 uid="uid://kgj33brnm4c6"]
+
+[ext_resource type="Script" uid="uid://dk1ksyshdnowc" path="res://Scripts/peix.gd" id="1_qtdjr"]
+[ext_resource type="Texture2D" uid="uid://ctloafi0avimd" path="res://Sprites/fish.png" id="2_u07ct"]
+[ext_resource type="Script" uid="uid://cwee1cufg75et" path="res://Scripts/mal_enemic.gd" id="3_u07ct"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dugqi"]
+atlas = ExtResource("2_u07ct")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_676mu"]
+atlas = ExtResource("2_u07ct")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c85u3"]
+atlas = ExtResource("2_u07ct")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54u34"]
+atlas = ExtResource("2_u07ct")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rh7yx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dugqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_676mu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c85u3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54u34")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u07ct"]
+size = Vector2(12, 20)
+
+[node name="Peix" type="Node2D"]
+script = ExtResource("1_qtdjr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_rh7yx")
+autoplay = "default"
+frame = 3
+frame_progress = 0.842392
+
+[node name="A" type="Area2D" parent="."]
+script = ExtResource("3_u07ct")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="A"]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_u07ct")
+
+[node name="RayCastDreta" type="RayCast2D" parent="."]
+position = Vector2(0, -10)
+target_position = Vector2(9, 0)
+collision_mask = 2
+hit_from_inside = true
+
+[node name="RayCastEsquerra" type="RayCast2D" parent="."]
+position = Vector2(0, -10)
+target_position = Vector2(-10, 0)
+collision_mask = 2
+hit_from_inside = true
+
+[connection signal="body_entered" from="A" to="A" method="_on_body_entered"]

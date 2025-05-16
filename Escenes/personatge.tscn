@@ -283,6 +283,7 @@ animation = &"Pegar"
 autoplay = "Quiet"
 
 [node name="Colisió" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
 shape = SubResource("CapsuleShape2D_dpd6h")
 
 [node name="Vida_1" type="AnimatedSprite2D" parent="."]
@@ -291,7 +292,7 @@ texture_filter = 1
 position = Vector2(-518, -291)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_3f5td")
-animation = &"Ple"
+animation = &"Buit"
 
 [node name="Vida_2" type="AnimatedSprite2D" parent="."]
 z_index = 1
@@ -307,4 +308,10 @@ texture_filter = 1
 position = Vector2(-326, -291)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_2skvs")
-animation = &"Ple"
+animation = &"Buit"
+
+[node name="Timer_immunitat" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer_immunitat" to="." method="_on_timer_immunitat_timeout"]

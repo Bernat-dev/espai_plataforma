@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqan5dvrtyp1"
-path="res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"
+uid="uid://ckkterknv6xb4"
+path="res://.godot/imported/background_lava.png-4d9450618576a9c63f368779c7cc32d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/lava-tile.png"
-dest_files=["res://.godot/imported/lava-tile.png-f898130f43ccfe550058568431c48821.ctex"]
+source_file="res://Sprites/background_lava.png"
+dest_files=["res://.godot/imported/background_lava.png-4d9450618576a9c63f368779c7cc32d8.ctex"]
 
 [params]
 

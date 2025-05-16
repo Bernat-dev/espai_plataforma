@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwylidtwp1jc3"
-path="res://.godot/imported/lava-background-preview.png-cb981585b6dfbf35d75d463796f20d6a.ctex"
+uid="uid://ctloafi0avimd"
+path="res://.godot/imported/fish.png-6cc5b3fb6dd6f470b50c605c07a0848c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/lava-background-preview.png"
-dest_files=["res://.godot/imported/lava-background-preview.png-cb981585b6dfbf35d75d463796f20d6a.ctex"]
+source_file="res://Sprites/fish.png"
+dest_files=["res://.godot/imported/fish.png-6cc5b3fb6dd6f470b50c605c07a0848c.ctex"]
 
 [params]
 
